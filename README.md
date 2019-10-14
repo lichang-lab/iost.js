@@ -6,7 +6,7 @@ It can be used in browsers and also on nodejs platform.
 ## Installation
 Using npm in your project
 ```
-npm install iost
+npm install @lichang-lab/iost-nodoc
 ```
 
 ## CDN
@@ -17,7 +17,7 @@ exports to window.IOST global.
 
 ## Usage
 ```
-const IOST = require('iost')
+const IOST = require('@lichang-lab/iost-nodoc')
 
 // use RPC
 const rpc = new IOST.RPC(new IOST.HTTPProvider("http://localhost:30001"));
