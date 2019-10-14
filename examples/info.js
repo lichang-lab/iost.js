@@ -1,6 +1,6 @@
 const IOST = require('../index');
 
-const rpc = new IOST.RPC(new IOST.HTTPProvider('http://47.244.109.92:30001'));
+const rpc = new IOST.RPC(new IOST.HTTPProvider('https://api.iost.io'));
 
 rpc.net.getNodeInfo().then(function(res) {
     console.log("GetNodeInfo result: " + JSON.stringify(res, null, '\t'))

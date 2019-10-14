@@ -4,11 +4,12 @@ const baseConfig = {
   mode: 'production',
   devtool: false,
   entry: {
-    iost : path.resolve(__dirname, './index.js')
+    iost: path.resolve(__dirname, './index.js')
   },
 }
 const serverConfig = {
   ...baseConfig,
+  devtool: '#source-map',
   target: 'node',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -18,17 +19,17 @@ const serverConfig = {
   },
   module: {
     rules: [
-      { 
-        test: /\.js$/, 
+      {
+        test: /\.js$/,
         use: [
           {
             loader: "babel-loader",
             options: {
               presets: [
                 ['@babel/env', {
-                    targets: {
-                        node: 6
-                    }
+                  targets: {
+                    node: 6
+                  }
                 }]
               ],
               plugins: [
@@ -53,8 +54,8 @@ const clientConfig = {
   },
   module: {
     rules: [
-      { 
-        test: /\.js$/, 
+      {
+        test: /\.js$/,
         use: [
           {
             loader: "babel-loader",
@@ -70,4 +71,4 @@ const clientConfig = {
   },
 }
 
-module.exports = [ serverConfig, clientConfig ]
+module.exports = [serverConfig, clientConfig]
