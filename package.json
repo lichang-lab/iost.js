@@ -5,7 +5,8 @@
   "main": "dist/iost.node.js",
   "author": "Tiny Hill",
   "scripts": {
-    "dist": "webpack"
+    "dist": "webpack",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
