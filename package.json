@@ -1,6 +1,6 @@
 {
   "name": "@lichang-lab/iost-nodoc",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "iost JavaScript SDK",
   "main": "dist/iost.node.js",
   "author": "Tiny Hill",
