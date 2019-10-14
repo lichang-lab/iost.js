@@ -7,6 +7,10 @@
   "scripts": {
     "dist": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lichang-lab/iost.js.git"
+  },
   "dependencies": {
     "atob": "^2.1.2",
     "axios": "^0.18.0",
