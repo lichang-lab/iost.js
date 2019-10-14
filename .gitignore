@@ -27,3 +27,5 @@ examples/test.js
 # Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
+
+dist
